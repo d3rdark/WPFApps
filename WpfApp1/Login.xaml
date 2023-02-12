@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Login" Height="507" Width="608" Background="#4BA77D">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#D4F3E5"/>
+            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#D4F3E5"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontFamily" Value="arial"/>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel Margin="10">
+        <TextBlock Margin="5" >INICIO DE SESIÓN</TextBlock>
+        <Ellipse Height="180" Width="180" Margin="0 0 0 5">
+            <Ellipse.Fill>
+                <ImageBrush Stretch="UniformToFill" 
+                            ImageSource="https://cdn.discordapp.com/attachments/960740041943056455/960740404687409232/conchetugatos__5___B94fSpQFL-Y___.jpg">
+                    
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label>NOMBRE DE USARIO:</Label>
+        <TextBox FontSize="20" Margin="5"></TextBox>
+        <Label>CONTRASEÑA:</Label>
+        <PasswordBox FontSize="20" Margin="5"></PasswordBox>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <CheckBox Foreground="#D4F3E5" Grid.Column="0"
+                      HorizontalAlignment="Left" Margin="5">Recuérdame</CheckBox>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Right"
+                       Margin="5" FontSize="12">¿Olvidaste tu contraseña?</TextBlock>
+        </Grid>
+        <Button FontSize="20" Margin="5" Background="#2D8D61"
+                Foreground="#D4F3E5">ENTRAR</Button>
+    </StackPanel>
+</Window>

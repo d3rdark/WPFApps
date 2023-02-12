@@ -1,0 +1,98 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0"
+                Background="#0cb9c1"
+                BorderThickness="10"
+                BorderBrush="#037ef3"
+                CornerRadius="30"
+                Margin="15">
+            
+            <TextBlock Text="Uno" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+        
+        <Border Grid.Column="1" Grid.Row="0"
+                Background="#ffc845"
+                BorderThickness="10"
+                BorderBrush="Orange"
+                CornerRadius="20"
+                Margin="10">
+
+            <TextBlock Text="Dos" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+
+        <Border Grid.Column="2" Grid.Row="0"
+                Background="#7ac143"
+                BorderThickness="10"
+                BorderBrush="#279b37"
+                CornerRadius="20"
+                Margin="10">
+
+            <TextBlock Text="Tres" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="1"
+                Background="#f85a40"
+                BorderThickness="10"
+                BorderBrush="#e4002b"
+                CornerRadius="20"
+                Margin="10">
+
+            <TextBlock Text="Cuatro" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="1"
+                Background="#146eb4"
+                BorderThickness="10"
+                BorderBrush="#0c3866"
+                CornerRadius="20"
+                Margin="10">
+
+            <TextBlock Text="Cinco" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+
+        <Border Grid.Column="3" Grid.Row="1"
+                Background="#fc636b"
+                BorderThickness="10"
+                BorderBrush="#ff322e"
+                CornerRadius="20"
+                Margin="10">
+
+            <TextBlock Text="Seis" FontSize="30"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+        </Border>
+
+    </Grid>
+</Window>

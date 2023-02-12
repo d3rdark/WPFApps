@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp1.Uniformgrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Uniformgrid" Height="430" Width="550">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1">
+            <Button Height="50">L</Button>
+            <Button Height="50">M</Button>
+            <Button Height="50">N</Button>
+            <Button Height="50">O</Button>
+            <Button Height="50">P</Button>
+        </StackPanel>
+
+        <UniformGrid Grid.Row="1" Columns="2" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Button Height="50">F</Button>
+                <Button Height="50">H</Button>
+                <Button Height="50">J</Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Height="50">G</Button>
+                <Button Height="50">I</Button>
+                <Button Height="50">K</Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>

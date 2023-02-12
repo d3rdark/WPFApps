@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfApp1.Calculadora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="350" Width="350">
+    <UniformGrid Rows="4">
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">1</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17" ></TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">2</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">abc</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">3</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">def</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">4</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">ghi</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">5</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">jki</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">6</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">mno</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">7</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">pqrs</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">8</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">tuv</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">9</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17">wxyz</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">*</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17"></TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">0</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,15">_</TextBlock>
+            </Grid>
+        </Button>
+        <Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="25">#</TextBlock>
+                <TextBlock Grid.Column="1" Margin="0,17"></TextBlock>
+            </Grid>
+        </Button>
+    </UniformGrid>
+</Window>

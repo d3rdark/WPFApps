@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfApp1.UusariosOTracopciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="UusariosOTracopciones" Height="400" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".2*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Header="Usuario" Margin="10" Background="GhostWhite">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="10" HorizontalAlignment="Center">
+                    <TextBlock FontSize="17" FontFamily="arial">Administrador</TextBlock>
+                    <Label Padding="0" FontSize="12">Administrador de equipo</Label>
+                    <Label Padding="0">Protegido por contraseña</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" Margin="10">
+                    <TextBlock FontSize="17" FontFamily="arial">Desarrolador</TextBlock>
+                    <Label Padding="0">Administrador</Label>
+                    <Label Padding="0">Protegido por contraseña</Label>
+                </StackPanel>
+                
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Margin="10" Background="GhostWhite">
+            <GroupBox.Header>
+                <CheckBox>Otras Opciones</CheckBox>
+            </GroupBox.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".7*"/>
+                    <ColumnDefinition Width=".3*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBlock Margin="10 5">Provedor de identificadores en línea:</TextBlock>
+                    <Label Margin="25 0" Padding="0">No se vinculo un
+                    indetidicador en linea</Label>
+                    <TextBlock Margin="25 0" Padding="0" Foreground="Gray"><Hyperlink>Vincular indentificador</Hyperlink></TextBlock>
+                </StackPanel>
+                <Button Grid.Column="1" VerticalAlignment="Bottom" Margin="15 5" Padding="5">Agregar provedor</Button>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
